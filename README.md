@@ -13,7 +13,7 @@ All the datasets I used are in [docs](docs).
 
 First, to filter down to egg dishes, I cross-referenced food codes I copied by hand from [USDA's website](https://fdc.nal.usda.gov/food-search?type=Survey%20(FNDDS)) with their ready-made [Excel](docs/WWEIA1112_foodcat_FNDDS.xlsx), and came out with a [comprehensive list](docs/appended_egg_codes.xlsx) that should include all the egg-related food codes.
 
-Then, for each two-year survey, I followed this workflow:
+Then, for each two-year survey (2013-14, 2015-16, 2017-18, 2021-23), I followed this workflow:
 1. Get participant number ('SEQN') and food codes ('DR1IFDCD') from the [dietary survey](https://wwwn.cdc.gov/nchs/nhanes/default.aspx) (downloaded local files look like '[DR1IFF_J.xpt](docs/2017-18/DR1IFF_J.xpt)')
 <br>⇩</br>
 2. Filter for eggs in food codes and rename columns={"DR1IFDCD": "food_code"}
