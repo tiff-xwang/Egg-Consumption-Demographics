@@ -17,11 +17,11 @@ Then, for each two-year survey, I followed this workflow:
 1. Get participant number ('SEQN') and food codes ('DR1IFDCD') from the [dietary survey](https://wwwn.cdc.gov/nchs/nhanes/default.aspx) (downloaded local files look like '[DR1IFF_J.xpt](docs/2017-18/DR1IFF_J.xpt)')
 <br>⇩</br>
 2. Filter for eggs in food codes and rename columns={"DR1IFDCD": "food_code"}
-⇩
+<br>⇩</br>
 3. Get income-to-poverty ratio ('INDFMPIR') from [demographics data](https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Demographics) (downloaded local files look like '[DEMO_J.xpt](docs/2017-18/DEMO_J.xpt)')
-⇩
+<br>⇩</br>
 4. Rename columns={"INDFMPIR": "income_poverty"}
-⇩
+<br>⇩</br>
 5. Join dietary and demographics data, which produces a new dataset called 'egg_consumption_demo.xlsx', with columns 'SEQN', 'food_code', and 'income_poverty'
-⇩
-5. Plot / exploratory data analysis
+<br>⇩</br>
+6. Plot / exploratory data analysis
